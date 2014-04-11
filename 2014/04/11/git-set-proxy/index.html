@@ -11,40 +11,28 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   
-  <title>如何部署此博客 | Macrotea博客</title>
+  <title>Git配置文件（.gitconfig）代理配置 | Macrotea博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   
     <meta name="author" content="Macrotea">
   
   
-    <meta name="description" content="HI
-很高兴您来到我的博客！
-此文将告诉您此类静态博客的构建和部署过程！
-此博客是基于 Hexo 构建而成！">
+    <meta name="description" content="有时候在git clone的时候需要翻墙，特别是在以前的公司，github是打不开的，悲剧！
+故而为了能正常访问Github，需要设置GAE代理！">
   
   <meta name="og:type" content="blog">
-<meta name="og:title" content="如何部署此博客">
-<meta name="og:url" content="http://macrotea.github.io//2014/04/11/how-to-hexo-your-blog/">
+<meta name="og:title" content="Git配置文件（.gitconfig）代理配置">
+<meta name="og:url" content="http://macrotea.github.io//2014/04/11/git-set-proxy/">
 <meta name="og:image">
 <meta name="og:site_name" content="Macrotea博客">
-<meta name="og:description" content="HI
-很高兴您来到我的博客！
-此文将告诉您此类静态博客的构建和部署过程！
-此博客是基于 Hexo 构建而成！
+<meta name="og:description" content="有时候在git clone的时候需要翻墙，特别是在以前的公司，github是打不开的，悲剧！
+故而为了能正常访问Github，需要设置GAE代理！
 
 
-主要命令
-npm install hexo -g
-
-mkdir blog && hexo init
-
-hexo new "how-to-hexo-your-blog"
-
-hexo generate && hexo server --debug
-
-
-说明
-搭建和部署依赖以下准备和技能：">
+[http]
+	proxy = 127.0.0.1:8087
+	sslCAinfo = D:\\Setup Files\\Network\\wallproxy-v2.1.19\\local\\cert\\CA.crt
+	sslVerify = fa">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternate" href="/atom.xml" title="Macrotea博客" type="application/atom+xml">
@@ -83,62 +71,33 @@ hexo generate && hexo server --debug
   <header>
     
       <div class="icon"></div>
-      <a href="/2014/04/11/how-to-hexo-your-blog/">
-  <time datetime="2014-04-11T13:30:12.000Z">
+      <a href="/2014/04/11/git-set-proxy/">
+  <time datetime="2014-04-11T12:30:12.000Z">
     2014-04-11
   </time>
 </a>
     
     
   
-    <h1 class="title">如何部署此博客</h1>
+    <h1 class="title">Git配置文件（.gitconfig）代理配置</h1>
   
 
   </header>
   
   <div class="entry">
     
-      <p>HI</p>
-<p>很高兴您来到我的博客！</p>
-<p>此文将告诉您此类静态博客的构建和部署过程！</p>
-<p>此博客是基于 <a href="http://hexo.io" title="Hexo" target="_blank">Hexo</a> 构建而成！</p>
+      <p>有时候在git clone的时候需要翻墙，特别是在以前的公司，github是打不开的，悲剧！</p>
+<p>故而为了能正常访问Github，需要设置GAE代理！</p>
 <a id="more"></a>
 
-<h2 id="主要命令">主要命令</h2>
-<figure class="highlight"><pre>npm install hexo -g
-
-mkdir blog && hexo init
-
-hexo <span class="keyword">new</span> <span class="string">"how-to-hexo-your-blog"</span>
-
-hexo <span class="keyword">generate</span> && hexo server <span class="comment">--debug</span>
+<figure class="highlight"><pre><span class="special">[</span>http<span class="special">]</span>
+	proxy = 127.0.0.1:8087
+	sslCAinfo = D:<span class="command">\\</span>Setup Files<span class="command">\\</span>Network<span class="command">\\</span>wallproxy-v2.1.19<span class="command">\\</span>local<span class="command">\\</span>cert<span class="command">\\</span>CA.crt
+	sslVerify = false
+<span class="special">[</span>https<span class="special">]</span>
+	proxy = 127.0.0.1:8087
 </pre></figure>
 
-<h2 id="说明">说明</h2>
-<p>搭建和部署依赖以下准备和技能：</p>
-<ul>
-<li><p><a href="http://hexo.io" target="_blank">Hexo</a> ： Hexo</p>
-</li>
-<li><p><a href="http://git-scm.com/" target="_blank">Git</a> ： 版本管理</p>
-</li>
-<li><p><a href="http://github.com/" target="_blank">Github</a> ： 源码托管</p>
-</li>
-<li><p><a href="http://nodejs.org/" target="_blank">Nodejs</a> ： Hexo依赖Nodejs</p>
-</li>
-<li><p><a href="http://www.npmjs.org" target="_blank">npmjs</a> ： Nodejs依赖管理</p>
-</li>
-<li><p><a href="https://github.com/heroicyang/hexo-theme-modernist" target="_blank">hexo-theme-modernist</a> ： 博客主题</p>
-</li>
-<li><p><a href="http://duoshuo.com/" target="_blank">多说</a> ： 博文社交化评论组件</p>
-</li>
-<li><p><a href="http://www.qiniu.com/" target="_blank">七牛存储</a> ： 图床</p>
-</li>
-<li><p><a href="http://tongji.baidu.com/" target="_blank">百度统计</a> ： 网站统计</p>
-</li>
-</ul>
-<h2 id="结束">结束</h2>
-<p>此类博客搭建过程涉及到许多开源和常用的工具，需耐心应用和组合！</p>
-<p>好的，现在开始你的Markdown博客之旅吧~</p>
 
     
   </div>
@@ -151,7 +110,7 @@ hexo <span class="keyword">generate</span> && hexo server <span class="comment">
 
       
   <div class="tags">
-    <a class="tags-link" href="/tags/教程/">教程</a>
+    <a class="tags-link" href="/tags/git/">git</a>
   </div>
 
     
@@ -162,7 +121,7 @@ hexo <span class="keyword">generate</span> && hexo server <span class="comment">
 
 <section id="comment">
   <h1 class="title">评论</h1>
-  <div class="ds-thread" data-title="如何部署此博客">
+  <div class="ds-thread" data-title="Git配置文件（.gitconfig）代理配置">
   </div>
 </section>
 </div>
