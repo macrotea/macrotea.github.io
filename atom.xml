@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[Macrotea博客]]></title>
+  <subtitle><![CDATA[一份记录，来自技术，来自生活，分享你我]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://macrotea.github.io//"/>
+  <updated>2014-04-11T12:54:30.565Z</updated>
+  <id>http://macrotea.github.io//</id>
+  
+  <author>
+    <name><![CDATA[Macrotea]]></name>
+    <email><![CDATA[macrotea@qq.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[如何部署此博客]]></title>
+    <link href="http://macrotea.github.io/2014/04/11/how-to-hexo-your-blog/"/>
+    <id>http://macrotea.github.io/2014/04/11/how-to-hexo-your-blog/</id>
+    <published>2014-04-11T11:30:12.000Z</published>
+    <updated>2014-04-11T12:42:44.000Z</updated>
+    <content type="html"><![CDATA[<p>HI</p>
+<p>很高兴您来到我的博客！</p>
+<p>此文将告诉您此类静态博客的构建和部署过程！</p>
+<p>此博客是基于 <a href="http://hexo.io" title="Hexo" target="_blank">Hexo</a> 构建而成！</p>
+<a id="more"></a>
+
+<h2 id="主要命令">主要命令</h2>
+<figure class="highlight"><pre>npm install hexo -g
+
+mkdir blog && hexo init
+
+hexo <span class="keyword">new</span> <span class="string">"how-to-hexo-your-blog"</span>
+
+hexo <span class="keyword">generate</span> && hexo server <span class="comment">--debug</span>
+</pre></figure>
+
+<h2 id="说明">说明</h2>
+<p>搭建和部署依赖以下准备和技能：</p>
+<ul>
+<li><p><a href="http://hexo.io" target="_blank">Hexo</a> ： Hexo</p>
+</li>
+<li><p><a href="http://git-scm.com/" target="_blank">Git</a> ： 版本管理</p>
+</li>
+<li><p><a href="http://github.com/" target="_blank">Github</a> ： 源码托管</p>
+</li>
+<li><p><a href="http://nodejs.org/" target="_blank">Nodejs</a> ： Hexo依赖Nodejs</p>
+</li>
+<li><p><a href="http://www.npmjs.org" target="_blank">npmjs</a> ： Nodejs依赖管理</p>
+</li>
+<li><p><a href="https://github.com/heroicyang/hexo-theme-modernist" target="_blank">hexo-theme-modernist</a> ： 博客主题</p>
+</li>
+<li><p><a href="http://duoshuo.com/" target="_blank">多说</a> ： 博文社交化评论组件</p>
+</li>
+<li><p><a href="http://www.qiniu.com/" target="_blank">七牛存储</a> ： 图床</p>
+</li>
+<li><p><a href="http://tongji.baidu.com/" target="_blank">百度统计</a> ： 网站统计</p>
+</li>
+</ul>
+<h2 id="结束">结束</h2>
+<p>此类博客搭建过程涉及到许多开源和常用的工具，需耐心应用和组合！</p>
+<p>好的，现在开始你的Markdown博客之旅吧~</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>HI</p>
+<p>很高兴您来到我的博客！</p>
+<p>此文将告诉您此类静态博客的构建和部署过程！</p>
+<p>此博客是基于 <a href="http://hexo.io" title="Hexo" target="_blank">Hexo</a> 构建而成！</p>
+]]></summary>
+    
+      <category term="教程" scheme="http://macrotea.github.io/tags/%E6%95%99%E7%A8%8B/"/>
+    
+      <category term="杂项" scheme="http://macrotea.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+  </entry>
+  
+</feed>
