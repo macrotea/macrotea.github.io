@@ -543,7 +543,6 @@ article footer .tags:before {
   text-align: center;
 }
 #footer a {
-  color: #fff;
   font-style: italic;
 }
 @media screen and (max-width: 740px) {
